@@ -1,7 +1,9 @@
 // This file overrides some default values from Casper (css/screen.css) and has also new styles
 
 @import "colors";
+@import "variables";
 @import "header";
+@import "footer";
 
 body:not(.post-template) .post-title {
   font-size: 2.5rem;
@@ -9,23 +11,21 @@ body:not(.post-template) .post-title {
 }
 
 hr.before-content {
-  max-width: 900px;
-  width: 80%;
-  margin: 2em auto;
+  margin: 0 auto;
 }
 
-.inner{
-  max-width: 900px;
-
+hr.before-content, .inner, .post, .pagination{
+  max-width: $max-page-width;
+  width: $content-width;
 }
 
-.post{
-  max-width: 900px;
-
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.pagination{
-  max-width: 900px;
+main {
+  flex: 1;
 }
 
 // Tags

@@ -1,0 +1,15 @@
+@import "variables";
+
+footer.page-footer {
+  max-width: $max-page-width;
+  width: $content-width;
+  margin: 8rem auto 0 auto;
+  padding: 1rem 0 2rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.75em;
+  color: #BBC7CC;
+  a{
+    text-decoration: none;
+  }
+}
