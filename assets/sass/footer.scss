@@ -1,15 +1,20 @@
 @import "variables";
 
 footer.page-footer {
-  max-width: $max-page-width;
-  width: $content-width;
-  margin: 8rem auto 0 auto;
-  padding: 1rem 0 2rem 0;
+  @media #{$mq-mobile-up} {
+    max-width: $max-page-width;
+    width: $content-width;
+    margin: 8rem auto 2rem auto;;
+  }
+  margin: 8rem 0 2rem 0;
+  padding: 0 16px;
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
   line-height: 1.75em;
   color: #BBC7CC;
   a{
     text-decoration: none;
+    color: #4A4A4A;
+    font-weight: normal;
   }
 }

@@ -15,17 +15,10 @@ hr.before-content {
 }
 
 hr.before-content, .inner, .post, .pagination{
-  max-width: $max-page-width;
-  width: $content-width;
-}
-
-.site-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
+  @media #{$mq-tablet-up} {
+    max-width: $max-page-width;
+    width: $content-width;
+  }
 }
 
 // Tags

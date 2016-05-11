@@ -26,21 +26,17 @@
 </head>
 <body class="{{body_class}} nav-closed">
 
-{{navigation}}
-
 <div class="site-wrapper">
 
     {{! Everything else gets inserted here }}
     {{{body}}}
 
-    <footer class="page-footer clearfix">
-        <!--<a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}.-->
-        <!--<a href="https://ghost.org">Stretch</a> theme by Ferran Negre.-->
-        <!--Proudly published with <a href="https://ghost.org">Ghost</a>-->
+    <footer class="site-footer page-footer clearfix">
         <section class="copyright"><a
                 href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
         <section class="poweredby">
-            <a href="https://github.com/ferrannp/Stretch">Stretch</a> theme by Ferran Negre.
+            <a href="https://github.com/ferrannp/Stretch">Stretch</a> theme by
+            <a href="https://github.com/ferrannp">Ferran Negre</a>.
             Proudly published with <a href="https://ghost.org">Ghost</a>
         </section>
     </footer>

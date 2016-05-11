@@ -6,11 +6,7 @@
     {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
     <h1>{{@blog.title}}</h1>
     <h2>{{{@blog.description}}}</h2>
-    <ul>
-        <li role="presentation"><a href="http://github.com/ferrannp">Github</a></li>
-        <li role="presentation"><a href="http://twitter.com/ferrannp">Twitter</a></li>
-        <li role="presentation"><a href="http://linkedin.com/in/ferrannp">Linkedin</a></li>
-    </ul>
+    {{navigation}}
 </header>
 
 {{! The main content area on the homepage }}
